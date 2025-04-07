@@ -1,7 +1,11 @@
+import ProductModel from "./product.model.js";
+
 export default class ProductController {
 
     getAllProducts(req,res) {
-        res.send('product router get request fullfilled');
+        const products = ProductModel.GetAll();
+        res.status(200).send(products);
     }
 
+    
 }
