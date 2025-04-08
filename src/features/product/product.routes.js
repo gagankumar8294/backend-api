@@ -9,6 +9,7 @@ const productController = new ProductController();
 // All the paths to controller methos
  
 productRoutes.get('/' , productController.getAllProducts);
+productRoutes.post('/' , productController.addProduct);
 
 //export router
 export default productRoutes;
